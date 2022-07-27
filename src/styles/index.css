@@ -1,12 +1,26 @@
+.full-box{
+    width: 400px;
+}
+.number-items{
+    height: 40px;
+    color: gray;
+    font-style: italic;
+}
+.hide { /*Para ocultar el botón*/
+    display: none;
+}
+.hide:focus { /*Para quitar el borde exterior del botón después de presionado*/
+  outline: none;
+  box-shadow: none;
+}
+.hide:hover { /*Para mostrar la sombra del botón*/
+    box-shadow: 0 0 5px black;
+}
+.hide:active { /*Para quitar la sombra del botón cuando se presione*/
+    box-shadow: none;
+}
+.select:hover .hide { /*Para mostrar el botón que está dentro de la LI con clase seleccionar cuando la LI tenga el mouse encima*/
+    display: block;
+    color: red;
+}
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
